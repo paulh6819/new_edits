@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>What car are you looking at?</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- Link to your CSS file -->
+    <script src="src/index.js" ></script>
+    <!-- Link to your JavaScript file -->
+  </head>
+
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 id="title">What car are you looking at?</h1>
+    <div class="center-container">
+      <div class="drop-area" id="dropArea">
+        <div class="animation-container">
+          <div class="car" id="car" />
+          <div class="arrow" id="arrow" />
+        </div>
+        <div id="cat">
+          <p>Drag and drop a photo here</p>
+        </div>
+
+        <label class="upload-button" for="file-upload"
+          >Or click here to upload</label
+        >
+        <input id="file-upload" type="file" />
+      </div>
+      <div class="image-preview" id="imagePreview">
+        <!-- Image will be inserted here -->
+      </div>
+    </div>
+
+    <div id="demo"></div>
+
+    <div class="drop-zone">
+      <input type="file" name="myFile" class="drop-zone--input" />
+      <span class="drop-zone__promt"></span>
+    </div>
+
+    <div id="monkey" onclick=allowDrop(event)">
+      Drop your photo here
+
+     </div>
+
+     
+    </div>
+  
+  
+    <img id="feet" />
+   
+  
+  
+  </body>
+</html>
